@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfólio de Giovanna Marques — desenvolvedora júnior na DTIC da Polícia Militar do Acre e estudante de Sistemas de Informação." />
+  <meta name="author" content="Giovanna Marques" />
+
+  <!-- Open Graph (compartilhamento em redes) -->
+  <meta property="og:title" content="Giovanna Marques · Desenvolvedora" />
+  <meta property="og:description" content="Portfólio de uma dev júnior apaixonada por código, café e resolver problemas." />
+  <meta property="og:type" content="website" />
+
+  <title>Giovanna Marques · Dev</title>
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👩‍💻</text></svg>" />
+
+  <!-- Fontes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- fundo animado -->
+  <div class="bg-orbs" aria-hidden="true">
+    <span class="orb orb--1"></span>
+    <span class="orb orb--2"></span>
+    <span class="orb orb--3"></span>
+  </div>
+
+  <!-- NAVEGAÇÃO -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#inicio" class="nav__logo">
+        <span class="nav__logo-mark">&lt;/&gt;</span>
+        <span class="nav__logo-text">giovanna</span>
+      </a>
+
+      <nav class="nav__links" id="navLinks">
+        <a href="#sobre">Sobre</a>
+        <a href="#skills">Skills</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#contato" class="nav__cta">Contato</a>
+      </nav>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="inicio">
+      <div class="hero__inner">
+        <p class="hero__hi reveal">
+          <span class="wave">👋</span> oi, eu sou a
+        </p>
+        <h1 class="hero__name reveal">Giovanna Marques</h1>
+        <h2 class="hero__role reveal">
+          <span class="type" id="typed" aria-hidden="true"></span>
+          <span class="type__cursor" aria-hidden="true">|</span>
+        </h2>
+        <p class="hero__desc reveal">
+          Desenvolvedora <strong>júnior</strong> na DTIC da Polícia Militar do Acre
+          e estudante de <strong>Sistemas de Informação</strong>.
+          Transformo café em código e problemas em soluções. ☕
+        </p>
+        <div class="hero__actions reveal">
+          <a href="#projetos" class="btn btn--primary">Ver projetos</a>
+          <a href="#contato" class="btn btn--ghost">Bora conversar</a>
+        </div>
+      </div>
+
+      <a href="#sobre" class="hero__scroll" aria-label="Rolar para baixo">
+        <span></span>
+      </a>
+    </section>
+
+    <!-- SOBRE -->
+    <section class="section" id="sobre">
+      <div class="section__head reveal">
+        <span class="section__num">01</span>
+        <h2 class="section__title">Sobre mim</h2>
+      </div>
+
+      <div class="about">
+        <div class="about__text reveal">
+          <p>
+            Prazer! Sou a <strong>Giovanna</strong>, desenvolvedora júnior na
+            <strong>DTIC — Divisão de Tecnologia da Informação e Comunicação</strong>
+            da Polícia Militar do Estado do Acre. No dia a dia, ajudo a construir e
+            manter sistemas que fazem a máquina pública funcionar melhor. 🚓
+          </p>
+          <p>
+            Ao mesmo tempo, curso <strong>Sistemas de Informação</strong> — então estou
+            sempre com um pé na prática e outro na teoria, aprendendo algo novo toda semana.
+            Gosto de código limpo, interfaces que fazem sentido e daquele momento em que o
+            bug finalmente some.
+          </p>
+          <p>
+            Quando não estou codando, provavelmente estou tomando um café, estudando
+            uma tecnologia nova ou anotando ideia de projeto num caderninho.
+          </p>
+        </div>
+
+        <aside class="about__card reveal">
+          <div class="card-term">
+            <div class="card-term__bar">
+              <span></span><span></span><span></span>
+            </div>
+            <pre class="card-term__body"><code><span class="tk-c">// sobre.js</span>
+<span class="tk-k">const</span> <span class="tk-v">giovanna</span> = {
+  <span class="tk-p">nome</span>: <span class="tk-s">'Giovanna Marques'</span>,
+  <span class="tk-p">cargo</span>: <span class="tk-s">'Dev Júnior'</span>,
+  <span class="tk-p">local</span>: <span class="tk-s">'DTIC · PMAC'</span>,
+  <span class="tk-p">estuda</span>: <span class="tk-s">'Sistemas de Informação'</span>,
+  <span class="tk-p">foco</span>: [<span class="tk-s">'front'</span>, <span class="tk-s">'back'</span>, <span class="tk-s">'dados'</span>],
+  <span class="tk-p">combustivel</span>: <span class="tk-s">'☕'</span>,
+};</code></pre>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section" id="skills">
+      <div class="section__head reveal">
+        <span class="section__num">02</span>
+        <h2 class="section__title">O que eu faço</h2>
+      </div>
+
+      <div class="skills">
+        <article class="skill reveal">
+          <div class="skill__icon">🎨</div>
+          <h3 class="skill__title">Front-end</h3>
+          <p class="skill__desc">
+            Construo interfaces responsivas e agradáveis de usar, cuidando de
+            cada detalhe do visual e da experiência.
+          </p>
+          <ul class="skill__tags">
+            <li>HTML</li><li>CSS</li><li>JavaScript</li><li>React</li>
+          </ul>
+        </article>
+
+        <article class="skill reveal">
+          <div class="skill__icon">⚙️</div>
+          <h3 class="skill__title">Back-end</h3>
+          <p class="skill__desc">
+            Desenvolvo a lógica por trás das aplicações: APIs, regras de negócio
+            e integrações que sustentam o sistema.
+          </p>
+          <ul class="skill__tags">
+            <li>PHP</li><li>Node.js</li><li>Python</li><li>Java</li>
+          </ul>
+        </article>
+
+        <article class="skill reveal">
+          <div class="skill__icon">🗄️</div>
+          <h3 class="skill__title">Banco de dados</h3>
+          <p class="skill__desc">
+            Modelo, consulto e organizo dados para que a informação certa esteja
+            sempre no lugar certo.
+          </p>
+          <ul class="skill__tags">
+            <li>SQL</li><li>MySQL</li><li>PostgreSQL</li><li>Modelagem</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- PROJETOS -->
+    <section class="section" id="projetos">
+      <div class="section__head reveal">
+        <span class="section__num">03</span>
+        <h2 class="section__title">Projetos</h2>
+      </div>
+      <p class="section__lead reveal">
+        Alguns trabalhos que já fiz (ou estou fazendo). Vá trocando pelos seus reais! ✏️
+      </p>
+
+      <div class="projects">
+        <article class="project reveal">
+          <div class="project__top">
+            <span class="project__folder">📁</span>
+            <div class="project__links">
+              <a href="#" aria-label="Repositório no GitHub" title="Código">↗</a>
+            </div>
+          </div>
+          <h3 class="project__title">Sistema interno DTIC</h3>
+          <p class="project__desc">
+            Aplicação web para apoiar processos internos da divisão de TI.
+            Substitua por uma descrição real do projeto.
+          </p>
+          <ul class="project__tags">
+            <li>PHP</li><li>MySQL</li><li>JavaScript</li>
+          </ul>
+        </article>
+
+        <article class="project reveal">
+          <div class="project__top">
+            <span class="project__folder">📁</span>
+            <div class="project__links">
+              <a href="#" aria-label="Repositório no GitHub" title="Código">↗</a>
+            </div>
+          </div>
+          <h3 class="project__title">Projeto da faculdade</h3>
+          <p class="project__desc">
+            Um trabalho ou projeto do curso de Sistemas de Informação que você
+            tenha orgulho de mostrar.
+          </p>
+          <ul class="project__tags">
+            <li>Java</li><li>PostgreSQL</li>
+          </ul>
+        </article>
+
+        <article class="project reveal">
+          <div class="project__top">
+            <span class="project__folder">📁</span>
+            <div class="project__links">
+              <a href="#" aria-label="Repositório no GitHub" title="Código">↗</a>
+            </div>
+          </div>
+          <h3 class="project__title">Seu próximo projeto ✨</h3>
+          <p class="project__desc">
+            Espaço reservado para aquela ideia que você vai tirar do papel.
+            Já deixei o cartão pronto pra você. 😉
+          </p>
+          <ul class="project__tags">
+            <li>Em breve</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section class="section section--contact" id="contato">
+      <div class="section__head reveal">
+        <span class="section__num">04</span>
+        <h2 class="section__title">Contato</h2>
+      </div>
+
+      <div class="contact reveal">
+        <h3 class="contact__headline">Bora construir algo juntos?</h3>
+        <p class="contact__text">
+          Tá com uma ideia, uma vaga ou só quer trocar sobre código?
+          Me chama — respondo com gosto (e com café na mão). ☕
+        </p>
+
+        <div class="contact__links">
+          <a class="contact__link" href="mailto:giopmac18@gmail.com">
+            <span class="contact__ico">✉️</span>
+            <span>
+              <strong>E-mail</strong>
+              <small>giopmac18@gmail.com</small>
+            </span>
+          </a>
+
+          <a class="contact__link" href="https://github.com/" target="_blank" rel="noopener">
+            <span class="contact__ico">🐙</span>
+            <span>
+              <strong>GitHub</strong>
+              <small>@seu-usuario</small>
+            </span>
+          </a>
+
+          <a class="contact__link" href="https://www.linkedin.com/" target="_blank" rel="noopener">
+            <span class="contact__ico">💼</span>
+            <span>
+              <strong>LinkedIn</strong>
+              <small>/in/seu-perfil</small>
+            </span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>
+      Feito com <span class="footer__heart">♥</span> e muito
+      <code>café</code> por Giovanna Marques
+    </p>
+    <p class="footer__year" id="year"></p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
